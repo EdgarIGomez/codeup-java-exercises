@@ -105,24 +105,11 @@ public class MethodsExercises {
             result = num * factorialRecursion(num - 1);
             System.out.println(result);
             return result;
-        } else if (num == 0) {
+        } else{
 
             return 1;
 
-        } else {
-            System.out.print("That is not a number between 1 and 20 enter a new number: ");
-            long newNum = scanner.nextInt();
-            factorialRecursion(newNum);
         }
-        System.out.printf("The factorial of %s is %s%n", num, result);
-        System.out.print("Would you like to continue? [Y/N] ");
-        String response = scanner.next();
-        if (response.equalsIgnoreCase("Y")) {
-            System.out.print("Enter a higher number: ");
-            long newNum = scanner.nextInt();
-            factorialRecursion(newNum);
-        }
-            return result;
     }
 
     public static void dicePrompter(){
