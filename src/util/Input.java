@@ -6,7 +6,7 @@ public class Input {
     private static Scanner scanner;
 
     public static String getString(){
-        System.out.print("Can you input a string: ");
+        System.out.print("Input your word: ");
         scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
@@ -28,7 +28,7 @@ public class Input {
         System.out.printf("Give a number between %s and %s: ", min, max);
         scanner = new Scanner(System.in);
         int input = scanner.nextInt();
-        if(input > min && input < max){
+        if(input >= min && input <= max){
             return input;
         }else {
             System.out.printf("%nThat's not a number between %s and %s try again.%n", min, max);
