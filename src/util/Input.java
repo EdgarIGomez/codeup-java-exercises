@@ -6,13 +6,13 @@ public class Input {
     private static Scanner scanner;
 
     public static String getString(){
-        System.out.print("Input your word: ");
+//        System.out.print("Input your word: ");
         scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
 
     public static boolean yesNo(){
-        System.out.print("Can you give a confirmation: ");
+//        System.out.print("Can you give a confirmation: ");
         scanner = new Scanner(System.in);
         String input = scanner.next();
         if(input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes")
@@ -25,7 +25,7 @@ public class Input {
     }
 
     public static int getInt(int min, int max){
-        System.out.printf("Give a number between %s and %s: ", min, max);
+        System.out.printf("Enter a number between %s and %s: ", min, max);
         scanner = new Scanner(System.in);
         int input = scanner.nextInt();
         if(input >= min && input <= max){
@@ -37,7 +37,7 @@ public class Input {
     }
 
     public static int getInt(){
-        System.out.print("Input a integer number: ");
+//        System.out.print("Input a integer number: ");
         scanner = new Scanner(System.in);
         int input = scanner.nextInt();
         return input;
