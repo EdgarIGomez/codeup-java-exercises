@@ -26,5 +26,14 @@ public class InputTest {
 
         System.out.println(Input.getDouble("This is a prompt"));
 
+        System.out.println(Input.getBinary());
+
+        System.out.println(Input.getHexadecimal());
+
+        System.out.println(Input.getBinary("This is a prompt"));
+
+        System.out.println(Input.getHexadecimal("This is a prompt"));
+
+
     }
 }
