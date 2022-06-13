@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public static class TestingPassengers {
+class TestingPassengers {
 
 
     public static List<Passenger> sortPassengers(List<Passenger> listToSort) {
